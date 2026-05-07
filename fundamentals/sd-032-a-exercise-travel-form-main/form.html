@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Form</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="" method="get"  id="main-form">
+    <h1 id="title">Formulário Trybe Travel</h1>
+    <label for="fullName">
+        <div class="input-group mb-3">
+        <span class="input-group-text">Nome: </span>
+        <input type="text" name="name" id="fullName" placeholder="Digite seu nome." required  class="form-control" autocomplete="off">
+        </div>
+    </label>
+
+    <br>
+    <br>
+
+    <label for="e-mail">
+        <div class="input-group mb-3">
+            <span class="input-group-text">
+        Email: <input type="email" name="e-mail" id="e-mail" placeholder="Digite seu e-mail." required autocomplete="off" class="form-control">
+            </span>
+        </div>
+    </label>
+
+    <br>
+    <br>
+
+    <label class="form-control w-auto d-inline-block">. Destino preferido:</label>
+    <div class="form-check">
+        <input type="radio" name="destination" id="place-1" value="Cidade" required class="form-check-input">
+        <label for="place-1" class="form-check-label">
+            Cidade
+        </label>
+    </div>
+
+    <div class="form-check">
+        <label for="place-2" class="form-check-label">
+            <input type="radio" name="destination" id="place-2" value="Campo" required class="form-check-input"> Campo
+        </label>
+    </div>
+
+    <div class="form-check">
+        <label for="place-3" class="form-check-label">
+            <input type="radio" name="destination" id="place-3" value="Praia" required class="form-check-input"> Praia
+        </label>
+    </div>
+
+    <div class="form-check">
+        <label for="place-4" class="form-check-label">
+            <input type="radio" name="destination" id="place-4" value="Montanha" required class="form-check-input"> Montanha
+        </label>
+    </div>
+
+    <br>
+    
+    <p></p>
+    <label for="question">
+        <span class="input-group-text">. Por que você deveria ser a pessoa desenvolvedora a ganhar o curso?   </span>
+        <textarea name="textarea" id="question" required placeholder="Escreva algo." class="form-control"></textarea>
+    </label>
+
+    <br>
+
+    <label for="date">
+        <span class="input-group-text">. Qual a melhor data para realizar a viagem?</span>
+        <input type="date" id="date" required class="form-control">
+    </label>
+
+    <br><br>
+
+    <p>. Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</p>
+    <div class="form-check">
+    <input type="checkbox" name="prm" id="promo" class="form-check-input">
+    <label for="promo" class="form-check-label">Sim.</label>    
+    </div>
+
+    <br><br>
+
+    <p>. Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuro.</p>
+    <div class="form-check">
+    <input class="form-check-input" type="checkbox" name="agm" id="agreement">
+    <label for="agreement" class="form-check-label"> Sim.</label>
+    </div>
+    
+    <br><br>
+
+    <label for="submit-btn">
+        <button type="submit" id="submit-btn" class="btn btn-outline-success">Enviar</button>   
+    </label>
+    <label for="reset-btn">
+        <button type="reset" id="reset-btn" class="btn btn-outline-danger">Limpar</button>
+    </label>
+
+    <br>
+
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

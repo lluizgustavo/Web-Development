@@ -78,13 +78,6 @@ const changeColors = () => {
 
 }
 
-
-const pixelsColor = document.querySelectorAll(".pixel");
-    for(let index = 0; index < pixelsColor.length; index +=1) {
-        pixelsColor[index].style.backgroundColor = "white"
-    };
-
-
 const clearColorSelected = (event) => {
     const colors = document.querySelectorAll(".color")
     for (let color of colors) {
@@ -93,7 +86,6 @@ const clearColorSelected = (event) => {
     const currentColor = event.currentTarget
     currentColor.classList.add("selected")
 }
-
 
 const putColor = (event) => {
                         
@@ -111,7 +103,6 @@ const putColor = (event) => {
     saveBoard();
 
 }
-
 
 const clearPixels = () => {
     const pixels = document.querySelectorAll(".pixel")
@@ -138,3 +129,28 @@ const fillPixel = document.querySelectorAll(".pixel")
 for (let pixel of fillPixel) {
     pixel.addEventListener("click", putColor)
 }
+
+const pixelsColor = document.querySelectorAll(".pixel");
+    for(let index = 0; index < pixelsColor.length; index +=1) {
+        pixelsColor[index].style.backgroundColor = "white"
+    };
+
+const mouseOn = (event) => {
+    event.currentTarget.style.width = "60px"
+    event.currentTarget.style.height = "60px"
+}
+
+const mouseOff = (event) => {
+    event.currentTarget.style.width = "50px"
+    event.currentTarget.style.height = "50px"
+}
+
+const colors = document.querySelectorAll(".color")
+for (colorOn of colors){
+    colorOn.addEventListener("mouseover", mouseOn)
+}
+
+for (colorOff of colors) {
+    colorOff.addEventListener("mouseleave", mouseOff)
+}
+
