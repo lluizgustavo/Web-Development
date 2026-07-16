@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    background-color: rgb(50, 167, 145);
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.trybewarts-login {
+    display: flex;
+    justify-content: space-around;
+}
+
+.trybewarts-header-logo {
+    width: 50px;
+}
+
+.nav-form {
+    display: flex;
+    width: 35%;
+}
+
+.main-container {
+    display: flex;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#evaluation-form {
+    display: flex;
+    flex-direction: column;
+    width: 675px;
+}
+
+#trybewarts-forms-logo {
+    height: 500px;
+}
+
+#forms-sub-container {
+    display: flex;
+    max-width: 500px;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 10px;
+    width: fit-content;
+    justify-content: center;
+}
+
+#forms-sub-container input, #forms-sub-container label{
+    flex: 1;
+}
+
+#label-family {
+    width: 20%;
+}
+
+#label-family .radio-option{
+    display: flex;
+    margin-top: 10px;
+    gap: 5px;
+}
+
+#label-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-left: 2px solid rgb(50, 167, 145);
+    padding-left: 10px;
+}
+
+#label-content-sub-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
+    gap: 15px 25px;
+    padding: 10px;
+    width: 70%;
+    max-width: 400px;
+}
+
+.checkbox-option label {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+    flex: 1;
+}
+
+.checkbox-main-container {
+    display: flex;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+#label-rate {
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+    width: 100%;
+}
+
+#label-rate-sub-container {
+    display: flex;
+    flex: 1;
+}
+
+.rate-option {
+    display: flex;
+    padding-left: 10px;
+}
+
+.textarea {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    gap: 5px
+}
+
+#label-infos {
+    display: flex;
+    margin-top: 10px;
+    gap: 5px;
+}
+
+#submit-btn {
+    margin-top: 10px;
+    padding: 5px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(92, 102, 100);
+    color: aliceblue;
+    width: 100%;
+    padding: 10px;
+}
